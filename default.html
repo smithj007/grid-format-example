@@ -1,0 +1,13 @@
+<div class="control-section">
+    <ejs-grid [dataSource]='data' [allowSorting]='true' [allowTextWrap]="true" height='350'>
+        <e-columns>
+            <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-column>
+            <e-column field='CustomerName' headerText='Customer Name' width='150'></e-column>
+            <e-column field='OrderDate' headerText='Order Date' width='130' [format]="{type: 'date', format:'MM/dd/yyyy'}" textAlign='Right'></e-column>
+            <e-column field='OrderDate' headerText='Time' width='130' [format]="{type: 'date', format:'hh:mm:ss a'}" textAlign='Right'></e-column>
+            <e-column field='Freight' headerText='Freight' width='120' format='C2' textAlign='Right'></e-column>
+            <e-column field='ShippedDate' headerText='Shipped Date' width='130' [format]="{type: 'dateTime', skeleton: 'short'}" textAlign='Right'></e-column>
+            <e-column field='ShipCountry' headerText='Ship Country' width='150'></e-column>
+        </e-columns>
+    </ejs-grid>
+</div>
